@@ -14,7 +14,7 @@ int add(int x, int y)
 	return z;
 }
 
-//Èı×ÓÆå
+//ä¸‰å­æ£‹
 //int menu()
 //{
 //	printf("**********************\n");
@@ -23,7 +23,7 @@ int add(int x, int y)
 //	return 0;
 //}
 //
-//#include "game.h"//Í·ÎÄ¼şÀï¶¨ÒåÁËrow£¬col
+//#include "game.h"//å¤´æ–‡ä»¶é‡Œå®šä¹‰äº†rowï¼Œcol
 //void init_g(char g[row][col], int r, int c)
 //{
 //	int i;
@@ -66,11 +66,11 @@ int add(int x, int y)
 //void Player_Move(char g[row][col], int r, int c)
 //{
 //	int x, y;
-//	while (1)     //ÓÀÔ¶Ñ­»·£¬³ı·Çbreak
+//	while (1)     //æ°¸è¿œå¾ªç¯ï¼Œé™¤ébreak
 //	{
-//		printf("ÇëÊäÈë×ø±ê£º\n");    
-//		scanf("%d%d", &x, &y);    //ÊäÈëÊ±¼ÇµÃ´ò¿Õ¸ñ£¬·ñÔò»áÈÏÎªÊÇÒ»¸öÊı×Ö
-//		if (x >= 1 && x <= r && y >= 1 && y <= c)  //ÅĞ¶Ïx£¬yµÄºÏÀíĞÔ£¨´øÈëÍæ¼ÒÏë·¨£©
+//		printf("è¯·è¾“å…¥åæ ‡ï¼š\n");    
+//		scanf("%d%d", &x, &y);    //è¾“å…¥æ—¶è®°å¾—æ‰“ç©ºæ ¼ï¼Œå¦åˆ™ä¼šè®¤ä¸ºæ˜¯ä¸€ä¸ªæ•°å­—
+//		if (x >= 1 && x <= r && y >= 1 && y <= c)  //åˆ¤æ–­xï¼Œyçš„åˆç†æ€§ï¼ˆå¸¦å…¥ç©å®¶æƒ³æ³•ï¼‰
 //		{
 //			if (g[x - 1][y - 1] == ' ')
 //			{
@@ -79,11 +79,11 @@ int add(int x, int y)
 //			}
 //			else
 //			{
-//				printf("¸Ã×ø±ê±»Õ¼ÓÃ£¬ÇëÖØĞÂÊäÈë£º\n");
+//				printf("è¯¥åæ ‡è¢«å ç”¨ï¼Œè¯·é‡æ–°è¾“å…¥ï¼š\n");
 //			}
 //		}
 //		else
-//			printf("×ø±ê´íÎó£¬ÇëÖØĞÂÊäÈë£º\n");
+//			printf("åæ ‡é”™è¯¯ï¼Œè¯·é‡æ–°è¾“å…¥ï¼š\n");
 //	}
 //}
 //
@@ -91,11 +91,11 @@ int add(int x, int y)
 //{
 //	int x;
 //	int y;
-//	printf("µçÄÔ×ß\n");
+//	printf("ç”µè„‘èµ°\n");
 //	srand((unsigned int)time(NULL));
 //	while (1)
 //	{
-//		x = rand() % r;  //È¡ÓàÖ®ºóĞ¡ÓÚr
+//		x = rand() % r;  //å–ä½™ä¹‹åå°äºr
 //		y = rand() % c;
 //		if (g[x][y] == ' ')
 //		{
@@ -120,10 +120,10 @@ int add(int x, int y)
 //     } 
 //	return 1;
 //}
-//char winer(char g[row][col], int r, int c)//±©Á¦·¨[doge]
+//char winer(char g[row][col], int r, int c)//æš´åŠ›æ³•[doge]
 //{
 //	int i;
-//	for (i= 0; i< r; i++)        //ÈıĞĞ
+//	for (i= 0; i< r; i++)        //ä¸‰è¡Œ
 //	{
 //		if (g[i][0] == g[i][1]&& g[i][1] == g[i][2] &&  g[i][2] != ' ')
 //		{
@@ -132,7 +132,7 @@ int add(int x, int y)
 //			else return '2';
 //		}
 //	}
-//	for (i = 0; i < r; i++)        //ÈıÁĞ
+//	for (i = 0; i < r; i++)        //ä¸‰åˆ—
 //	{
 //		if (g[0][i] == g[1][i] && g[1][i]== g[2][i] && g[2][i]!=' ')
 //		{
@@ -141,7 +141,7 @@ int add(int x, int y)
 //			else return '2';
 //		}
 //	}
-//	if(g[0][0]==g[1][1]&& g[1][1]==g[2][2] &&g[2][2] !=' ')  //Á½¸ö¶Ô½ÇÏß
+//	if(g[0][0]==g[1][1]&& g[1][1]==g[2][2] &&g[2][2] !=' ')  //ä¸¤ä¸ªå¯¹è§’çº¿
 //	{
 //		if (g[i][0] == '*')
 //			return '1';
@@ -155,145 +155,10 @@ int add(int x, int y)
 //		else 
 //			return '2';
 //	}
-//	if (full(g, r, c) == 1)  //ÅĞ¶Ï¼ÌĞø
+//	if (full(g, r, c) == 1)  //åˆ¤æ–­ç»§ç»­
 //	{
 //		return '4';
 //	}
 //	return '3';
 //}
 
-
-
-//É¨À×
-int menu()
-{
-	printf("**********************\n");
-	printf("****1.play  2.exit****\n");
-	printf("**********************\n");
-	return 0;
-}
-#include "game.h"
-void init_g(char g[ROW][COL], int r, int c)
-{
-	int i;
-	int j;
-	for (i = 0; i < r; i++)
-	{
-		for (j = 0; j < c; j++)
-		{
-			g[i][j] = '0';
-		}
-	}
-}
-void init_g(char g[a][b], int r, int c)
-{
-	int i;
-	int j;
-	for (i = 0; i < r; i++)
-	{
-		for (j = 0; j < c; j++)
-		{
-			g[i][j] = '*';
-		}
-	}
-}
-
-void p_g(char g[a][b], int r, int c)
-{
-	int i;
-	int j;
-	for (i = 0; i < r; i++)
-	{
-		for (j = 0; j < c; j++)
-		{
-			printf(" %c ", g[i][j]);
-			if (j < c - 1)
-				printf("|");
-		}
-		printf("\n");
-		if (i < r-1)
-		{
-			for (j = 0; j < c; j++)
-			{
-				printf("---");
-				if (j < c - 1)
-					printf("|");
-			}
-			printf("\n");
-		}
-	}
-}
-void p_g(char g[ROW][COL], int r, int c)
-{
-	int i;
-	int j;
-	for (i = 0; i < r; i++)
-	{
-		for (j = 0; j < c; j++)
-		{
-			printf("%c",g[i][j]);
-		}
-		printf("\n");
-	}
-}
-
- void SetMine(char g[ROW][COL], int r, int  c)
- {
-	 srand(unsigned int(time(NULL)));
-	 int m = count;
-	 while (m)   //ÒÑÔÚgame.hÖĞ¶¨Òå
-	 {
-		 int x = rand() % r+1;
-		 int y = rand() % c+1;  //1~9,µÚ2µ½µÚ10¸ñ
-		 if (g[x][y] == '0')
-		 {
-			 g[x][y] = '1';
-			 m--;
-		 }
-	 }
- }
-
- int compare(char hidden[ROW][COL],int x,int y)
- {
-	 return (hidden[x-1][y]+ hidden[x][y-1]+hidden[x+1][y-1]+ hidden[x-1][y-1]
-		 + hidden[x+1][y]+ hidden[x][y+1]+ hidden[x-1][y+1]+ hidden[x+1][y+1]
-		 -8*'0');   //  '1'-'0'=1 ; '3'-'0'=3;²éASCIIÂë¿ÉÖª
- }
- void FindMine(char showing[a][b], char hidden[ROW][COL], int r, int c)
- {
-	 int x, y;
-	 int i=0;
-	 char n=0;
-	 while (i<81-n)
-	 {
-		 printf("ÇëÊäÈë×ø±ê£º\n");
-		 scanf("%d%d", &x, &y);
-		 if (x >= 1 && x <= r && y >= 1 && y <= c)
-		 {
-			 if (showing[x-1][y-1] == '*')
-			 {
-				 if (hidden[x][y] == '1')
-				 {
-					 printf("Äã²ÈÀ×ÁË\n");
-					 p_g(hidden, ROW, COL);
-					 break;
-				 }
-				 else
-				 {
-					 int n = compare(hidden,x,y);
-					 showing[x-1][y-1] = n+'0';
-					 i++;
-					 p_g(showing, a, b);
-				 }
-			 }
-			 else
-			 {
-				 printf("×ø±êÖØ¸´£¬ÇëÖØĞÂÊäÈë£º\n");
-			 }
-		 }
-		 else
-			 printf("·Ç·¨ÊäÈë£¬ÇëÖØĞÂÊäÈë£º\n");
-	 }
-if(i >=81 - n)
-	printf("¹§Ï²Äã£¬ÅÅÍêÁË\n");
- }
